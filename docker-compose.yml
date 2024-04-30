@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  app:
+    build: ./app
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./app:/app"
+      - "/app/node_modules"
+    environment:
+      - HOST=0.0.0.0
+
+  postgres:
+    image: postgres:14-alpine
+    ports:
+      - 5432:5432
+    volumes:
+      - db:/var/lib/postgresql/data
+      - ./db/scripts:/docker-entrypoint-initdb.d/
+    environment:
+      NODE_ENV: development
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: postgres
+      DB_PASSWORD: postgres
+      POSTGRES_PASSWORD: postgres
+      DB_NAME: postgres
+
+volumes:
+  db:
+    driver: local
