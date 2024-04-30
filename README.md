@@ -1,6 +1,5 @@
-> Written with [StackEdit](This web application is built with Nuxt.js 2 and leverages Docker containerization for deployment. The application utilizes a technology stack that includes Vue.js, Express.js, PostgreSQL, and Tailwind CSS.
+> This web application is built with Nuxt.js 2 and leverages Docker containerization for deployment. The application utilizes a technology stack that includes Vue.js, Express.js, PostgreSQL, and Tailwind CSS.
 
-  
   
 
 **Requirements:**
@@ -29,7 +28,6 @@ Make sure you have the following installed on your machine:
     
 3.  To stop the containers: docker-compose down
     
-
 **DB Architecture:**
 
 ![DB-schema](https://github.com/nimithaka/todo/assets/168100350/996d5bea-65bf-415c-88dc-db674c084856)
