@@ -28,10 +28,6 @@ app.post('/signup', async (req, res) => {
   }
 })
 
-/**
- * Authtoken should be in headers and in the form of
- * Authorization: Basic ${Token returned from signin endpoint}
- */
 
 app.post('/signin', async (req, res) => {
   const { email, pwd } = req.body
@@ -45,6 +41,11 @@ app.post('/signin', async (req, res) => {
     res.status(500).json({ error: 'An error occurred while logging in' });
   }
 })
+
+/**
+ * Authtoken should be in headers and in the form of
+ * Authorization: Basic ${Token returned from signin endpoint}
+ */
 
 app.get('/projects', authenticate, async (req, res) => {
   const userId = req.user
