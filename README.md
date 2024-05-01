@@ -4,28 +4,25 @@ Requirements:
 
 Make sure you have the following installed on your machine:
 
-*   Docker
-    
-*   Docker Compose
-    
+\* Docker
+
+\* Docker Compose
 
 Getting Started:
 
-*   git clone git@github.com:nimithaka/todo.git
-    
-*   cd todo
-    
-*   Docker-compose up
-    
+\* git clone git@github.com:nimithaka/todo.git
+
+\* cd todo
+
+\* Docker-compose up
 
 Usage:
 
-1.  docker-compose up
-    
-2.  Visit [http://localhost/auth/](http://localhost/doc/) in your web browser to access the application.
-    
-3.  To stop the containers: docker-compose down
-    
+1\. docker-compose up
+
+2\. Visit \[http://localhost/) in your web browser to access the application.
+
+3\. To stop the containers: docker-compose down
 
 DB Architecture:
 
